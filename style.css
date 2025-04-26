@@ -785,6 +785,18 @@ header.sticky .nav-bar {
     width: 100%;
 }
 
+.quiz-description {
+    max-width: 700px;
+    margin-top: 10px;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.quiz-description h3 {
+    font-size: 2em;
+    margin-bottom: 5px;
+}
+
 .quizzes-list {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
