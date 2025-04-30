@@ -164,3 +164,46 @@ ScrollReveal().reveal('.about .professional-list li', { delay: 500, origin: 'rig
 ScrollReveal().reveal('.skills-description, services-description, contact-left h2', { delay: 700, origin: 'left'});
 ScrollReveal().reveal('.experience-card, .service-card, .education, .portfolio .img-card', { delay: 800, origin: 'bottom', interval: 200 });
 ScrollReveal().reveal('footer .group', { delay: 500, origin: 'top', interval: 200 });
+
+
+document.addEventListener("DOMContentLoaded", () => {
+    const images = [
+        "WORKS/fandom-website.png",
+        "WORKS/fandom-website2.png",
+        "WORKS/fandom-website3.png",
+        "WORKS/fandom-website4.png",
+        "WORKS/fandom-website5.png"
+    ];
+
+    let currentImageIndex = 0;
+    const sliderImage = document.querySelector(".slider-image");
+    const prevBtn = document.querySelector(".prev-btn");
+    const nextBtn = document.querySelector(".next-btn");
+
+    // Check if the elements are correctly selected
+    console.log("Slider Image Element:", sliderImage);
+    console.log("Prev Button Element:", prevBtn);
+    console.log("Next Button Element:", nextBtn);
+
+    if (prevBtn && nextBtn && sliderImage) {
+        // Event listener for the "Prev" button
+        prevBtn.addEventListener("click", () => {
+            currentImageIndex = (currentImageIndex - 1 + images.length) % images.length;
+            console.log("Prev button clicked");
+            console.log("Current Image Index (Prev):", currentImageIndex);
+            // Update the image src when clicking prev
+            sliderImage.src = images[currentImageIndex] + '?t=' + new Date().getTime(); // Adding a timestamp to prevent caching
+        });
+
+        // Event listener for the "Next" button
+        nextBtn.addEventListener("click", () => {
+            currentImageIndex = (currentImageIndex + 1) % images.length;
+            console.log("Next button clicked");
+            console.log("Current Image Index (Next):", currentImageIndex);
+            // Update the image src when clicking next
+            sliderImage.src = images[currentImageIndex] + '?t=' + new Date().getTime(); // Adding a timestamp to prevent caching
+        });
+    } else {
+        console.error("Slider image or buttons not found!");
+    }
+});

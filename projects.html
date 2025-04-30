@@ -35,13 +35,16 @@
     </header>
 
 
-    <!----------------------PORTFOLIO SECTION----------------------LEGIT AUQ NA!-->
+    <!----------------------PORTFOLIO SECTION------------------------>
     <section class="portfolio section" id="portfolio">
         <div class="container flex-center">
             <h1 class="section-title-01">Projects</h1>
             <h2 class="section-title-02">Projects</h2>
 
             <div class="content">
+                <div class="quiz-description">
+                    <h3>Previous Works</h3>
+                </div>
                 <div class="portfolio-list">
                     <div class="img-card-container">
                         <div class="img-card">
@@ -56,10 +59,17 @@
                             <div class="portfolio-model-body">
                                 <i class="fas fa-times portfolio-close-btn"></i>
                                 <h3>K-Pop Fandom Website</h3>
-                                <img src="WORKS/fandom-website.png" alt="">
-                                <p>A fan-made BTS website built with HTML, CSS, and JavaScript, featuring member profiles, discography, and interactive galleries for an immersive ARMY experience. </p>
+                                
+                                <div class="slider" id="slider1">
+                                    <button class="prev-btn">&#10094;</button>
+                                    <img class="slider-image" src="WORKS/fandom-website.png" alt="Slide">
+                                    <button class="next-btn">&#10095;</button>
+                                </div>
+                            
+                                <p>A fan-made BTS website built with HTML, CSS, and JavaScript, featuring member profiles, discography, and interactive galleries for an immersive ARMY experience.</p>
                                 <a href="" class="btn">Download <i class="fas fa-download"></i></a>
                             </div>
+                            
                         </div>
                         
                     </div>
@@ -77,7 +87,13 @@
                             <div class="portfolio-model-body">
                                 <i class="fas fa-times portfolio-close-btn"></i>
                                 <h3>Veterinary Clinic IMS</h3>
-                                <img src="WORKS/VET CLINIC IMS.png" alt="">
+
+                                <div class="slider" id="slider2">
+                                    <button class="prev-btn">&#10094;</button>
+                                    <img src="WORKS/VET CLINIC IMS.png" class="slider-image" alt="Slide">
+                                    <button class="next-btn">&#10095;</button>
+                                  </div>
+                                  
                                 <p>A Visual Studio-based system that manages patient records, appointments, and inventory, ensuring efficient clinic operations and better pet care.</p>
                                 <a href="" class="btn">Download <i class="fas fa-download"></i></a>
                             </div>
@@ -97,7 +113,13 @@
                             <div class="portfolio-model-body">
                                 <i class="fas fa-times portfolio-close-btn"></i>
                                 <h3>PORTFOLIO</h3>
-                                <img src="WORKS/portfolio_web.png" alt="">
+                               
+                                <div class="slider" id="slider3">
+                                    <button class="prev-btn">&#10094;</button>
+                                    <img src="WORKS/portfolio_web.png" class="slider-image" alt="Slide">
+                                    <button class="next-btn">&#10095;</button>
+                                  </div>
+                                  
                                 <p>A simple yet visually appealing portfolio website built with HTML, featuring an about section, skill showcase, and a gallery to highlight creative work. Designed for easy navigation and a professional online presence.</p>
                                 <a href="" class="btn">Download <i class="fas fa-download"></i></a>
                             </div>
@@ -117,7 +139,13 @@
                             <div class="portfolio-model-body">
                                 <i class="fas fa-times portfolio-close-btn"></i>
                                 <h3>Sit and Zip Ordering and Reservation System</h3>
-                                <img src="WORKS/sit_and_zip_1.png" alt="">
+
+                                <div class="slider" id="slider4">
+                                    <button class="prev-btn">&#10094;</button>
+                                    <img src="WORKS/sit_and_zip_cv.png" class="slider-image" alt="Slide">
+                                    <button class="next-btn">&#10095;</button>
+                                  </div>
+                                  
                                 <p>This mobile app was made using Android Studio for the Sit and Zip Garden Cafe branch. It is used by the employees to take customer orders and manage cafe venue reservations. The app helps staff work faster and more efficiently by organizing orders and bookings in one place.</p>
                                 <a href="" class="btn">Download <i class="fas fa-download"></i></a>
                             </div>
@@ -125,6 +153,37 @@
                     </div>
 
                 </div>
+                <div class="quiz-description">
+                    <h3>Laboratory Activities</h3>
+                </div>
+
+            <div class="portfolio-list">
+                <div class="img-card-container">
+                    <div class="img-card">
+                        <div class="overlay"></div>
+                        <div class="info">
+                            <h3>Laboratory # 1 & 2</h3>
+                            <span>Wireframe and UI</span>
+                        </div>
+                        <img src="WORKS/karis_events_lab1.png" alt="">
+                    </div>
+                    <div class="portfolio-model flex-center">
+                        <div class="portfolio-model-body">
+                            <i class="fas fa-times portfolio-close-btn"></i>
+                            <h3>Karis Events Management wih Employee Log-in and Sign-up</h3>
+
+                            <div class="slider" id="slider5">
+                                <button class="prev-btn">&#10094;</button>
+                                <img src="WORKS/karis_events_lab1.png" class="slider-image" alt="Slide">
+                                <button class="next-btn">&#10095;</button>
+                              </div>
+                              
+                            <p>A Visual Studio-based system that manages patient records, appointments, and inventory, ensuring efficient clinic operations and better pet care.</p>
+                            <a href="" class="btn">Download <i class="fas fa-download"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
             </div>
         </div>
     </section>
@@ -134,26 +193,27 @@
             <div class="about group">
                 <h2>Clarisse</h2>
                 <p>Front-end Developer</p>
-                <a href="#about">About Me</a>
+                <a href="index.html#about">About Me</a>
             </div>
             <div class="hr"></div>
             <div class="info group">
                 <h3>More</h3>
                 <ul>
-                    <li><a href="#skills">Skills</a></li>
-                    <li><a href="#services">Services</a></li>
-                    <li><a href="#portfolio">Portfolio</a></li>
-                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="index.html#skills">Skills</a></li>
+                    <li><a href="index.html#services">Services</a></li>
+                    <li><a href="projects.html">Portfolio</a></li>
+                    <li><a href="quiz.html">Quizzes</a></li>
+                    <li><a href="index.html#contact">Contact</a></li>
                 </ul>
             </div>
             <div class="hr"></div>
             <div class="follow group">
                 <h3>Follow</h3>
             <ul>
-                <li><a href=""><i class="fab fa-facebook-f"></i></a></li>
-                <li><a href=""><i class="fab fa-instagram"></i></a></li>
-                <li><a href=""><i class="fab fa-twitter"></i></a></li>
-                <li><a href=""><i class="fab fa-linkedin"></i></a></li>
+                <li><a href="https://www.facebook.com/cla.lei21/"><i class="fab fa-facebook-f"></i></a></li>
+                <li><a href="https://www.instagram.com/cla_lei/"><i class="fab fa-instagram"></i></a></li>
+                <li><a href="https://github.com/clixxx-cllge"><i class="fab fa-github"></i></a></li>
+                <li><a href="www.linkedin.com/in/clarisse-lei-oraña-a6207a359"><i class="fab fa-linkedin"></i></a></li>
             </ul>
             </div>
             
@@ -165,7 +225,71 @@
     </footer>
     
         <!--EXTERNAL SCRIPTS-->
-        <script src=""></script>
+    <script>
+            
+            const sliders = {
+                slider1: [
+                    "WORKS/fandom-website.png",
+                    "WORKS/fandom-website2.png",
+                    "WORKS/fandom-website3.png",
+                    "WORKS/fandom-website4.png",
+                    "WORKS/fandom-website5.png",
+                    "WORKS/fandom-website6.png"
+                ],
+                slider2: [
+                    "WORKS/VET CLINIC IMS.png",
+                    "WORKS/vet2.png"
+                ],
+                slider3: [
+                    "WORKS/portfolio_web.png",
+                    "WORKS/portfolio_web2.png",
+                    "WORKS/portfolio_web3.png",
+                    "WORKS/portfolio_web4.png"
+                ],
+                slider4: [
+                    "WORKS/sit_and_zip_cv.png",
+                    "WORKS/sit_and_zip_1.png",
+                    "WORKS/sit_and_zip_2.png"
+                ],
+                slider5: [
+                    "WORKS/karis_events_lab1.png",
+                    "WORKS/karis_events_lab2.png",
+                    "WORKS/karis_events_lab3.png",
+                    "WORKS/karis_events_lab4.png",
+                    "WORKS/karis_events_lab5.png",
+                    "WORKS/karis_events_lab6.png",
+                    "WORKS/wireframe.png"
+                ]
+            };
+
+            const currentIndexes = {
+                slider1: 0,
+                slider2: 0,
+                slider3: 0,
+                slider4: 0,
+                slider5: 0
+            };
+
+            document.querySelectorAll(".slider").forEach(slider => {
+                const sliderId = slider.id;
+                const image = slider.querySelector(".slider-image");
+                const prev = slider.querySelector(".prev-btn");
+                const next = slider.querySelector(".next-btn");
+
+                prev.addEventListener("click", () => {
+                    currentIndexes[sliderId] = (currentIndexes[sliderId] - 1 + sliders[sliderId].length) % sliders[sliderId].length;
+                    image.src = sliders[sliderId][currentIndexes[sliderId]];
+                });
+
+                next.addEventListener("click", () => {
+                    currentIndexes[sliderId] = (currentIndexes[sliderId] + 1) % sliders[sliderId].length;
+                    image.src = sliders[sliderId][currentIndexes[sliderId]];
+                });
+            });
+
+    </script>
+
+        </script>
         <script src="js/main.js"></script>
 
         
